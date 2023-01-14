@@ -443,7 +443,7 @@ async def chapter_click(client, data, chat_id):
 
         chapterFile = await db.get(ChapterFile, chapter.url)
 
-        caption = f'<b>🔸{chapter.manga.name} 🔸{chapter.name}\n'
+        caption = f'<b>🔸{chapter.manga.name} 🔸{chapter.name}</b>\n'
         if options & OutputOptions.Telegraph:
             caption += f'[Read on telegraph]({chapterFile.telegraph_url})\n'
         caption += f'<b>➥@Manga_Manhwa_Hub</b>'
