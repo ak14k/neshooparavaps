@@ -395,7 +395,7 @@ async def chapter_click(client, data, chat_id):
         options = options.output if options else (1 << 30) - 1
 
         caption = '\n'.join([
-            f'<b>🔸{chapter.manga.name} 🔸{chapter.name}</b>',
+            f'<b>{chapter.manga.name} - {chapter.name}</b>',
             f'<b>➥@Manga_Manhwa_Hub</b>'
         ])
 
